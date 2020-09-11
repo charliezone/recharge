@@ -1,0 +1,14 @@
+.personal-information-nav{
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 12px 32px;
+
+    .nav-link{
+        font-family: 'basiercircle-regular';
+        color: blue;
+
+        &.active{
+            background-color: #ECEFFE;
+        }
+    }
+}

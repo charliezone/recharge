@@ -6,9 +6,9 @@ import {
 } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Navigator from '../../components/Personalnformation/Navigator';
-import Profile from '../../components/Personalnformation/Profile';
-import ChangePassword from '../../components/Personalnformation/ChangePassword';
+import Navigator from '../../components/Personalnformation/Navigator/';
+import Profile from '../../components/Personalnformation/Profile/';
+import ChangePassword from '../../components/Personalnformation/ChangePassword/';
 
 export default function PersonalInformation() {
     const { path } = useRouteMatch();
