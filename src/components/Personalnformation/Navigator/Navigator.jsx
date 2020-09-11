@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useRouteMatch } from "react-router-dom";
+import { NavLink, useRouteMatch } from "react-router-dom";
 import { Nav } from 'react-bootstrap';
 
 export default function Navigator() {
@@ -7,10 +7,10 @@ export default function Navigator() {
     return (
         <Nav variant="pills" defaultActiveKey="/home" className="personal-information-nav">
             <Nav.Item>
-                <Link to={`${url}/profile`} className="nav-link">Profile</Link>
+                <NavLink to={`${url}/profile`} className="nav-link">Profile</NavLink>
             </Nav.Item>
             <Nav.Item>
-                <Link to={`${url}/change-password`} className="nav-link">Change Password</Link>
+                <NavLink to={`${url}/change-password`} className="nav-link">Change Password</NavLink>
             </Nav.Item>
         </Nav>
     )

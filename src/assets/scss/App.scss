@@ -1,5 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 
+@font-face {
+    font-family: 'basiercircle-regular';
+    src: local('MyFont'), url(../fonts/basiercircle-regular.otf) format('otf');
+  }
+
 .App{
     background-color: #F9F9F9;
 

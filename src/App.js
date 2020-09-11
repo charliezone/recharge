@@ -7,7 +7,7 @@ import {
 import { Container, Row, Col } from 'react-bootstrap';
 
 import PersonalInformation from './pages/Personalnformation';
-import './App.scss';
+import './assets/scss/App.scss';
 
 function App() {
   return (
