@@ -6,9 +6,11 @@ import {
 } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Navigator from '../../components/Personalnformation/Navigator/';
-import Profile from '../../components/Personalnformation/Profile/';
-import ChangePassword from '../../components/Personalnformation/ChangePassword/';
+import Navigator from '../../components/PersonalInformation/Navigator/';
+import Profile from '../../components/PersonalInformation/Profile/';
+import ChangePassword from '../../components/PersonalInformation/ChangePassword/';
+import Notifications from '../../components/PersonalInformation/Notifications';
+import MyCards from '../../components/PersonalInformation/MyCards';
 
 export default function PersonalInformation() {
     const { path } = useRouteMatch();
@@ -24,14 +26,17 @@ export default function PersonalInformation() {
                 <Row>
                     <Col>
                         <Switch>
-                            <Route exact path={path}>
-                                <Profile />
-                            </Route>
                             <Route path={`${path}/profile`}>
                                 <Profile />
                             </Route>
                             <Route path={`${path}/change-password`}>
                                 <ChangePassword />
+                            </Route>
+                            <Route path={`${path}/notifications`}>
+                                <Notifications />
+                            </Route>
+                            <Route path={`${path}/my-cards`}>
+                                <MyCards />
                             </Route>
                         </Switch>
                     </Col>

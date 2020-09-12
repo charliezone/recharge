@@ -1,0 +1,68 @@
+.personal-information-profile{
+    margin-top: 32px;
+    border-radius: 15px;
+    padding: 12px 15px 120px;
+    background-color: $white;
+
+    .profile-form{
+        padding: 33px 31.5px 0 0;
+        border-right: .5px solid rgba($color: #000000, $alpha: .16);
+        position: relative;
+
+        .form-label{
+            color: $black;
+            font-size: 12px;
+            margin-bottom: 5px;
+            font-family: 'basiercircle-regular';
+        }
+
+        .form-control{
+            height: 48px;
+            font-size: 14px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            background-color: #F1F6FC;
+            font-family: 'basiercircle-regular';
+        }
+
+        button{
+            position: absolute;
+            height: 48px;
+            width: 178px;
+            color: $white;
+            font-size: 14px;
+            background-color: $royal-blue;
+            font-family: 'basiercircle-regular';
+            left: calc(50% - 89px);
+            bottom: -100px;
+        }
+    }
+
+    .profile-info{
+        margin-top: 62px;
+        padding: 19px 17px;
+        border-radius: 10px;
+        background-color: #F9FCFF;
+
+        p{
+            color: #505B67;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: bold;
+            font-family: 'basiercircle-regular';
+
+            &:nth-of-type(1){
+                margin-bottom: 16.5px;
+            }
+
+            &:nth-of-type(2){
+                padding-top: 16.5px;
+                border-top: .5px solid rgba($color: #000000, $alpha: .16);
+            }
+
+            a{
+                color: $royal-blue;
+            }
+        }
+    }
+}

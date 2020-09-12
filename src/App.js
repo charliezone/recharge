@@ -6,13 +6,13 @@ import {
 } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 
-import PersonalInformation from './pages/Personalnformation';
+import PersonalInformation from './pages/PersonalInformation';
 import './assets/scss/App.scss';
 
 function App() {
   return (
     <div className="App">
-      <Container>
+      <Container fluid>
         <Row>
           <Col md={2}>
             <aside className="aside"></aside>

@@ -1,0 +1,24 @@
+.personal-information-nav{
+    height: 61px;
+    padding: 12px 32px;
+    border-radius: 15px;
+    background-color: #fff;
+
+    .nav-link{
+        font-size: 13px;
+        padding: 9px 16px;
+        border-radius: 10px;
+        color: $humming-bird;
+        font-family: 'basiercircle-regular';
+
+        &.active,
+        &:hover{
+            background-color: #ECEFFE;
+            color: $royal-blue;
+        }
+
+        .nav-link-icon{
+            margin-right: 8px;
+        }
+    }
+}
