@@ -4,10 +4,27 @@
     padding: 12px 15px 120px;
     background-color: $white;
 
+    @include  media-breakpoint-down(md){
+        padding: 0;
+        margin-top: 40px;
+        background-color: unset;
+    }
+
+    .profile-wraper{
+        @include  media-breakpoint-down(md){
+            padding: 0;
+        }
+    }
+
     .profile-form{
+        position: relative;
         padding: 33px 31.5px 0 0;
         border-right: .5px solid rgba($color: #000000, $alpha: .16);
-        position: relative;
+
+        @include  media-breakpoint-down(md){
+            padding: 0;
+            border-right: none;
+        }
 
         .form-label{
             color: $black;
@@ -18,6 +35,7 @@
 
         .form-control{
             height: 48px;
+            border: none;
             font-size: 14px;
             border-radius: 10px;
             margin-bottom: 25px;
@@ -26,15 +44,20 @@
         }
 
         button{
-            position: absolute;
             height: 48px;
             width: 178px;
             color: $white;
+            bottom: -100px;
             font-size: 14px;
+            position: absolute;
+            left: calc(50% - 89px);
             background-color: $royal-blue;
             font-family: 'basiercircle-regular';
-            left: calc(50% - 89px);
-            bottom: -100px;
+
+            @include  media-breakpoint-down(md){
+                bottom: 0;
+                position: relative;
+            }
         }
     }
 
@@ -43,6 +66,12 @@
         padding: 19px 17px;
         border-radius: 10px;
         background-color: #F9FCFF;
+
+        @include  media-breakpoint-down(md){
+            margin-top: 0;
+            padding: 17px;
+            margin-bottom: 33px;
+        }
 
         p{
             color: #505B67;

@@ -1,6 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./colors";
-@import "./utils";
 
 @font-face {
     font-family: 'basiercircle-regular';
@@ -13,10 +12,18 @@
     padding: 30px 0 60px;
     background-color: #F9F9F9;
 
+    @include  media-breakpoint-down(md){
+        padding: 55px 0 26px;
+    }
+
         .aside{
             height: 100%;
             border-radius: 15px;
             background-color: #fff;
+
+            @include  media-breakpoint-down(md){
+                display: none;
+            }
         }
 }
 
