@@ -2,7 +2,8 @@ import React from 'react';
 import {
   BrowserRouter as Router, 
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -23,6 +24,7 @@ function App() {
                 <Switch>
                 <Route exact path="/">
                     <h1>Home</h1>
+                    <Link to="/personal-information/profile">Ver personal information</Link>
                   </Route>
                   <Route path="/personal-information">
                     <PersonalInformation />
